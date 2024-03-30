@@ -1,0 +1,167 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    padding: 30px;
+}
+#login>form>input{
+width: 300px;
+border: none;
+border-bottom: 1px solid rgb(230, 224, 224);
+padding: 10px;
+margin: 10px;
+}
+
+#login>form>#submit{
+    background-color: orangered;
+    width: 320px;
+    color: white;
+    font-size: 18px;
+    border-radius: 9px;
+    border: none;
+}
+
+.forgot{
+    display: flex;
+    flex-direction: row;
+}
+.forgot>span{
+    margin: 20px;
+}
+.forgot>span>a{
+    color: grey;
+}
+.forgot>span>a:hover{
+    color:orangered;
+}
+
+#register{
+    box-shadow: 1px 1px 15px #b5c8db;
+    margin: 40px;
+    width: 100%;
+    padding: 20px;
+}
+#register>#h3{
+    border-bottom: 2px solid #0074f0;
+    text-align: center;
+}
+
+#register>form>#form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#register>form>#form>div{
+    width: 45%;
+    margin: 18px;
+    border: 1px solid rgb(230, 224, 224);
+    padding: 5px;
+}
+
+#register>form>#form>div>input{
+    padding: 10px;
+    width: 96.5%;
+    border: none;
+}
+#register>form>#form>div>select{
+    padding: 10px;
+    border: 1px solid rgb(230, 224, 224);
+    width: auto;
+}
+#cover{
+    border: 1px solid rgb(230, 224, 224);
+    padding: 5px;
+    color: #0074f0;
+}
+#cover>label{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#register>form>#form>div>input::placeholder{
+   color:#0074f0;
+}
+#submit{
+    background-color: orangered;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    margin: 20px;
+}
+#submit:hover{
+    background-color: rgb(219, 73, 20);
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+#contact>div{
+    padding: 30px;
+}
+.contact1{
+    width:60% ;
+}
+.contact2{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact>div>form{
+    box-shadow: 2px 2px 10px rgb(172, 170, 170);
+    padding: 30px;
+}
+#contact>div>form>input{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgb(235, 229, 229);;
+    margin-bottom: 10px;
+}
+#contact>div>form>textarea{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgb(235, 229, 229);;
+}
+@media only screen and (max-width: 900px) {
+    #contact{
+        flex-direction: column;
+        padding: 0;text-align: center;
+    }
+    .contact1{
+        width: auto;
+    }
+    .contact2{
+        width: auto;
+    }
+    #contact>div>form{
+        box-shadow: 0px 0px 0px rgb(172, 170, 170);
+        padding: 0px;
+        
+    }
+    #register>form>#form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #register>form>#form>div{
+        width: auto;
+        margin: 20px;
+        margin-left: -5px;
+    }
+   
+    #register>form>#form>div>input{
+        width: 95%;
+    }
+   
+}
